@@ -1,0 +1,5 @@
+- Describe GuardDuty findings that were detected related to the brute force attack
+	1. Unauthorized:EC2/SSHBruteForce on Attacking Instance - In this finding, the EC2 instance is performing a brute force attack to guess the SSH password to another instance in my VPC.
+	2. Unauthorized:EC2/SSHBruteForce on Web Service Instance-C3 - In this finding, the EC2 instances is under an SSH brute force attack.
+- Explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+	AWS Guard Duty follows the data from AWS CloudTrail, VPC Flow Logs and DNS Logs. To detect the SSH brute attack, Guard Duty would have discovered it by using the VPC Flow logs which have information about traffic going to and from the EC2 network interfaces.

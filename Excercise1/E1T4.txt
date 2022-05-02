@@ -1,0 +1,5 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+1. The IAM role has full access to S3 buckets. It should least privilege access permissions
+
+2. Public and private subnet ACL rules are allow all traffics from all ports. They should reduce the traffic that can be sent to and from the subnet

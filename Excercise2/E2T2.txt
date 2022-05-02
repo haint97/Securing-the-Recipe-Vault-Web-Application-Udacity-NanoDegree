@@ -1,0 +1,8 @@
+Problems:
+1. IAM policy is not following the principle of least privilege, allowing full access to resources.
+2. Instance name "Web Service Instance - C3" which port 20 which is  reachable from the internet.
+3. Serverside encryption not enabled for S3 buckets
+Solutions:
+1. Removing the Admin Privileges. Detect what users need to do and policies for them that let the users perform only those tasks
+2. Security group contains the inbound rule, that allows all traffics on all ports. That rule should be removed from security group and only needed ports should be opened in the inbound rules of security group.
+3. Enalbe encryption.
