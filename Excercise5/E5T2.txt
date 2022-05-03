@@ -1,8 +1,0 @@
-- Scan infrastructure as code templates
-	CFRipper is a Library and CLI security analyzer for AWS CloudFormation templates. You can use CFRipper to prevent deploying insecure AWS resources into your Cloud environment
-	Example: IAMRolesOverprivilegedRule: Role 'rootRole' contains an insecure permission '*' in policy 'root'
-- Scan AMI’s or containers for OS vulnerabilities
-	The Anchore Engine is an open-source project that provides a centralized service for inspection, analysis, and certification of container images. The Anchore Engine is provided as a Docker container image that can be run standalone or within an orchestration platform such as Kubernetes, Docker Swarm, Rancher, Amazon ECS, and other container orchestration platforms.
-- Scan an AWS environment for cloud's configuration vulnerabilities
-	AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources
-	Example: s3-bucket-server-side-encryption-enabled - Checks if your Amazon S3 bucket either has the Amazon S3 default encryption enabled or that the Amazon S3 bucket policy explicitly denies put-object requests without server side encryption that uses AES-256 or AWS Key Management Service. The rule is NON_COMPLIANT if your Amazon S3 bucket is not encrypted by default.
